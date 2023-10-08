@@ -7,6 +7,7 @@ const options = {
 };
 
 const getWeather= (city)=>{
+    if(city.lenght()===0) return;
     cityName.innerHTML=city;
     
 
@@ -49,3 +50,4 @@ function preventNumberInput(e){
         e.preventDefault();
     }
 }
+
